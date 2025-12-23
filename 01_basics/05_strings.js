@@ -4,7 +4,7 @@ const repoCount = 50
 // console.log(name + repoCount + " Value");
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
-
+                                        -string interpolation
 const gameName = new String('hitesh-hc-com')
 
 // console.log(gameName[0]);
@@ -16,7 +16,7 @@ const gameName = new String('hitesh-hc-com')
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4)
+const newString = gameName.substring(0, 4)//can't give negative index 
 console.log(newString);
 
 const anotherString = gameName.slice(-8, 4)
