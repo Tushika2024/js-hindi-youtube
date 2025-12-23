@@ -3,15 +3,13 @@ let a = 300
 if (true) {
     let a = 10
     const b = 20
-    // console.log("INNER: ", a);
+    var c=30
+    // console.log("INNER: ", a);->10
     
 }
-
-
-
-// console.log(a);
-// console.log(b);
-// console.log(c);
+// console.log(a);->300
+// console.log(b);->undefined
+// console.log(c);->30 (inside function block val also accssed)
 
 
 function one(){
@@ -22,12 +20,10 @@ function one(){
         console.log(username);
     }
     // console.log(website);
-
-     two()
-
+    two()
 }
+one()
 
-// one()
 
 if (true) {
     const username = "hitesh"
@@ -37,22 +33,20 @@ if (true) {
     }
     // console.log(website);
 }
-
 // console.log(username);
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
 
-console.log(addone(5))
-
+console.log(addone(5))//no error
 function addone(num){
     return num + 1
 }
 
 
 
-addTwo(5)
+addTwo(5)//error
 const addTwo = function(num){
     return num + 2
 }
