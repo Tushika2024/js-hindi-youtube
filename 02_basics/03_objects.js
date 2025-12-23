@@ -1,7 +1,7 @@
-// singleton
+// singleton  ->by using constructor method
 // Object.create
 
-// object literals
+// object literals->{}
 
 const mySym = Symbol("key1")
 
@@ -9,7 +9,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1",// for symbol as key
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -20,7 +20,7 @@ const JsUser = {
 // console.log(JsUser.email)
 // console.log(JsUser["email"])
 // console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+// console.log(JsUser[mySym])  can't using .operator
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)
