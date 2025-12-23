@@ -35,3 +35,7 @@ const myFunction = function(){
 console.log(typeof anotherId); // null typeof=>object
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+Memory is of 2 types-
+    1-)stack memory - used in primitive datatypes(by value=>copy)
+    2-)heap memory - used in non primitive datatypes(by reference)
