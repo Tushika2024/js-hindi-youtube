@@ -14,7 +14,7 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`
+        li.innerHTML = `${langName}`//each time we have to traverse whole tree
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
@@ -22,7 +22,7 @@
 
     function addOptiLanguage(langName){
         const li = document.createElement('li');
-        li.appendChild(document.createTextNode(langName))
+        li.appendChild(document.createTextNode(langName))//directly appending textnode
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
