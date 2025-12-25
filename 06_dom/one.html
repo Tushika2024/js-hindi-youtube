@@ -1,4 +1,5 @@
 //console.dir(document)
+DOM- TO MANIPULATE HTML USING JS
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +17,7 @@
 <body class="bg-black">
     <div >
         <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
         <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
         <input type="password" name="" id="">
@@ -39,4 +41,15 @@ document.getElementById("title").setAttribute('class','new class name')
 titlehead.style.backgroundColor='green'
 titlehead.textContent(all inner content whether display none i.e. hidden by css or not)
 titlehead.innerText(inner content which is not hidden)
-titlehead.innerHTML
+titlehead.innerHTML(INNER CONTENT WITH TAGS)
+
+document.getElementByClassName('classname')=>gives html collection
+
+document.querySelector('tag name=>h2'/'#idname'/'.class'/
+                        'tag ['attribute']'=>'input[type='password']')=>first h2 select
+
+document.querySelectorAll('css selector')=>all =>gives node list
+
+
+------node list and html collection not array
+------for conversion to array=>Array.from(htmlcollectionname/nodelistname)
